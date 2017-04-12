@@ -1,0 +1,288 @@
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/pt-sans-regular.ttf") type="truetype";
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/pt-sans-bold.ttf") type="truetype";
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Fedra Sans";
+    src: url("../fonts/fedra-sans-regular.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Fedra Sans";
+    src: url("../fonts/fedra-sans-bold.otf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+html {
+    overflow-x: hidden;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    color: #222;
+}
+
+.dark {
+    background: #0087C1;
+}
+
+.bordered:before {
+    content: "";
+    position: absolute;
+    top: -22px;
+    left: 0;
+    right: 0;
+    height: 44px;
+    background: url("../img/bordered-before.png") repeat-x;
+}
+
+.bordered:after {
+    content: "";
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    right: 0;
+    height: 44px;
+    background: url("../img/bordered-after.png") repeat-x;
+}
+
+.colored {
+    font-weight: 700;
+    color: #00549B;
+}
+
+.highlighted {
+    margin-top: -4px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -4px;
+    padding: 4px 12px;
+    background: #00549B;
+    color: white;
+} .offer .highlighted {
+    background: #0087C1;
+}
+
+h1 {
+    font-family: "Fedra Sans";
+    text-transform: uppercase;
+    font-size: 36px;
+} h1 span {
+    margin-top: 8px;
+}
+
+h2 {
+    font-family: "Fedra Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+} h2 span {
+    width: 100%;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: "Fedra Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: "Fedra Sans", sans-serif;
+    font-size: 24px;
+}
+
+h5 {
+    font-family: "Fedra Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+} h5 span {
+    font-size: 14px;
+}
+
+h6 {
+    font-family: "Fedra Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    color: #999;
+}
+
+button {
+    padding: 16px 32px;
+    border-radius: 8px;
+    border: none;
+    font-family: "Fedra Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+} button.small {
+    padding: 12px 24px;
+    font-size: 14px;
+}
+
+input.cta {
+    border-radius: 8px;
+    border: 0;
+    font-family: "Fedra Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+button.cta,
+input.cta {
+    background: #ffb006; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffb006 0%, #ff8306 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffb006 0%,#ff8306 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffb006 0%,#ff8306 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb006', endColorstr='#ff8306',GradientType=0 ); /* IE6-9 */
+    border-top: 1px solid white;
+    border-bottom: 1px solid #BF4A00;
+    color: white;
+    text-shadow: 0 -1px 0 #BF4A00;
+} button.cta:not(:disabled):hover,
+input.cta:not(:disabled):hover {
+    background: #F9CE1D; /* Old browsers */
+    background: -moz-linear-gradient(top,  #F9CE1D 0%, #ff8306 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #F9CE1D 0%,#ff8306 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #F9CE1D 0%,#ff8306 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9CE1D', endColorstr='#ff8306',GradientType=0 ); /* IE6-9 */
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+} button.cta:active, button.cta:focus,
+input.cta:active, input.cta:focus {
+    
+}
+
+.dark button.cta,
+.dark input.cta {
+    box-shadow: 0 0 128px white, 0 0 128px white;
+} .dark button.cta:hover,
+.dark input.cta:hover {
+    box-shadow: 0 0 128px white, 0 0 128px white;
+}
+
+mg-input {
+    border-radius: 8px;
+}
+
+a {
+    padding: 0;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a.cta {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #FF8306;
+}
+
+a[href^="tel:"] {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    color: #00549B;
+}
+
+ul {
+    margin: 0;
+    padding: 0px 16px 32px 24px;
+}
+
+li {
+    list-style: none;
+    position: relative;
+    margin: 16px 0;
+} li:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -24px;
+    height: 8px;
+    width: 8px;
+    background: #438095;
+    border-radius: 50%;
+} li:first-child {
+    margin-top: 0;
+} li:last-child {
+    margin-bottom: 0;
+}
+
+p {
+    color: #777;
+} .dark p {
+    color: white;
+}
+
+
+
+
+
+small {
+    display: inline-block;
+    font-size: 16px;
+}
+
+fade {
+    background: #1e2b33;
+}
+
+popup {
+    border-radius: 0;
+    box-shadow: 0 8px 32px rgba(0,0,0, 0.50);
+}
+
+popup h4 {
+    
+}
+
+popup p {
+    font-size: 16px;
+}
+
+popup .column:first-of-type {
+    background: url("../img/form.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+popup .column:nth-of-type(2) {
+    background: #00549B;
+}
+
+popup .dark input.cta {
+    box-shadow: none;
+}
+
+popup .icon-close {
+    cursor: pointer;
+    opacity: 0.50;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    color: white;
+} popup .icon-close:hover {
+    opacity: 1;
+}

@@ -1,0 +1,213 @@
+@media only screen and (min-width: 960px) {
+    
+    .mobile-only {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .wrapper {
+        width: 100%;
+        padding: 16px 0;
+    }
+    
+    .column {
+        
+    }
+    
+    popup {
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+    
+    .w1,
+    .w3,
+    .w4,
+    .w5,
+    .w6,
+    .w7,
+    .w8,
+    .w9,
+    .w10,
+    .w11,
+    .w12 {
+        width: 100%;
+    }
+    
+    .w2 {
+        width: 50%;
+    }
+    
+    .mobile-hidden {
+        display: none;
+    }
+    
+    .mobile-only {
+        display: block;
+    }
+    
+    .mobile-full {
+        width: 100%;
+    }
+    
+    .mobile-text-center {
+        text-align: center;
+    }
+    
+    
+    
+    
+    
+    logo {
+        margin: 16px 0;
+        background-position: center center;
+    }
+    
+    h1 {
+        margin-bottom: 16px;
+        font-size: 26px;
+    } h1 span {
+        font-size: 18px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    } h2 span {
+        font-size: 14px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    
+    
+    
+    
+    
+    #main {
+        padding-top: 32px;
+    }
+    
+    #main img,
+    #final img {
+        position: relative;
+        z-index: 1;
+        margin-bottom: -80px;
+    }
+    
+    
+    
+    
+    
+    #consultation {
+        
+    }
+    
+    #consultation .w3 {
+        width: 50%;
+    }
+    
+    
+    
+    
+    #pros {
+        background: url("../img/background/pros-mobile.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    
+    #pros .w2 {
+        width: 25%;
+    }
+    
+    #pros .w3 {
+        width: 75%;
+    }
+    
+    #pros .w4 {
+        width: 75%;
+    }
+    
+    .cons-img,
+    .pros-img {
+        width: 100%;
+    }
+    
+    
+    
+    
+    
+    #plan {
+        
+    }
+    
+    #plan wrapper:nth-of-type(2) {
+        width: 25vw;
+        margin: 0;
+    }
+    
+    #plan .w3 {
+        width: 75vw;
+    }
+    
+    #plan .step > div {
+        left: 32px;
+        right: auto;
+        text-align: left;
+    }
+    
+    
+    
+    
+    
+    #comments {
+        
+    }
+    
+    .comment {
+        padding: 32px;
+        padding-bottom: 16px;
+    } .comment:before {
+        top: auto;
+        bottom: calc(100% - 8px);
+        left: calc(50% - 8px);
+        width: 16px;
+        height: 16px;
+        border-left: 1px solid #E6E6E6;
+        border-bottom: 1px solid #E6E6E6;
+        -webkit-transform: rotate(135deg);
+    }
+    
+    
+    
+    
+    
+    #offer-business {
+        font-size: 18px;
+    }
+    
+    
+    
+    
+    
+    #video {
+        
+    }
+    
+    #video iframe {
+        width: 100%;
+    }
+    
+    
+    
+    
+    
+    #footer {
+        padding: 32px 0;
+    }
+    
+}

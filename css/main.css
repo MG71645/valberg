@@ -1,0 +1,541 @@
+#header,
+#footer {
+    padding: 0;
+}
+
+#header .wrapper {
+    padding: 16px 0;
+}
+
+#header small,
+#footer small {
+    opacity: 1;
+}
+
+#header icon,
+#footer icon {
+    font-size: 32px;
+    color: #00549B;
+}
+
+
+
+
+
+#main {
+    background: url("../img/background/main.jpg") center top no-repeat;
+    background-size: cover;
+}
+
+#main .wrapper,
+#final .wrapper {
+    padding: 0;
+}
+
+#main p,
+#final p {
+    margin: 16px 0;
+    font-size: 24px;
+}
+
+
+
+
+
+#badges {
+    font-size: 24px;
+}
+
+
+
+
+
+.catalogue {
+    padding-top: 0;
+}
+
+.catalogue header {
+    position: relative;
+} .catalogue header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: calc(50% - 480px);
+}
+
+.catalogue header .wrapper {
+    padding: 16px 0;
+}
+
+.catalogue h2 {
+    line-height: 1;
+} .catalogue h2 span {
+    line-height: 1;
+}
+
+.item h4 {
+    position: relative;
+    margin-top: 32px;
+    margin-bottom: 48px;
+} .item h4:after {
+    content: "в наличии";
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 96px;
+    margin-top: 8px;
+    padding: 4px 8px;
+    background: #8BC34A;
+    border-radius: 4px;
+    font-family: "PT Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+} .item h4.outofstock:after {
+    content: "на заказ";
+    background: #FF8A80;
+}
+
+.door {
+    position: relative;
+    width: 144px;
+    height: 298px;
+    backface-visibility: hidden;
+} .door.wide {
+    width: 192px;
+    margin-left: -24px;
+} .door.hit:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 108px;
+    height: 108px;
+    background: url("../img/hit.png") right top no-repeat;
+    background-size: cover;
+    backface-visibility: hidden;
+}
+
+.item label {
+    
+}
+
+.item b {
+    display: inline-block;
+    line-height: 18px;
+}
+
+.item .properties {
+    font-size: 12px;
+}
+
+.item button {
+    
+}
+
+
+
+
+
+#budget {
+    
+}
+
+#budget header:before {
+    background: url("../img/catalogue/budget/header.jpg") right bottom no-repeat;
+    background-size: cover;
+}
+
+#budget header .wrapper {
+    background: url("../img/catalogue/budget/after.png") left bottom no-repeat;
+    background-size: contain;
+}
+
+.b2-profi {
+    background: url("../img/catalogue/budget/b2-profi.png") center center no-repeat;
+    background-size: cover;
+}
+
+.b3-master {
+    background: url("../img/catalogue/budget/b3-master.png") center center no-repeat;
+    background-size: cover;
+}
+
+.b3-master-2 {
+    background: url("../img/catalogue/budget/b3-master-2.png") center center no-repeat;
+    background-size: cover;
+}
+
+.b4-practic-metal {
+    background: url("../img/catalogue/budget/b4-practic-metal.png") center center no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+#standart {
+    
+}
+
+#standart header {
+    background: #FFA207;
+} #standart header:before {
+    background: url("../img/catalogue/standart/header.jpg") right bottom no-repeat;
+    background-size: cover;
+}
+
+#standart header .wrapper {
+    background: url("../img/catalogue/standart/after.png") left bottom no-repeat;
+    background-size: contain;
+}
+
+.s2-quartet {
+    background: url("../img/catalogue/standart/s2-quartet.png") center center no-repeat;
+    background-size: cover;
+}
+
+.s4-techno {
+    background: url("../img/catalogue/standart/s4-techno.png") center center no-repeat;
+    background-size: cover;
+}
+
+.s4-diplomat {
+    background: url("../img/catalogue/standart/s4-diplomat.png") center center no-repeat;
+    background-size: cover;
+}
+
+.s4-senator {
+    background: url("../img/catalogue/standart/s4-senator.png") center center no-repeat;
+    background-size: cover;
+}
+
+.s4-senator-s {
+    background: url("../img/catalogue/standart/s4-senator-s.png") center center no-repeat;
+    background-size: cover;
+}
+
+.optima {
+    background: url("../img/catalogue/standart/optima.png") center center no-repeat;
+    background-size: cover;
+}
+
+.optima-70 {
+    background: url("../img/catalogue/standart/optima-70.png") center center no-repeat;
+    background-size: cover;
+}
+
+.modern {
+    background: url("../img/catalogue/standart/modern.png") center center no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+#prestige {
+    
+}
+
+#prestige header {
+    background: #0065A8;
+} #prestige header:before {
+    background: url("../img/catalogue/prestige/header.jpg") right bottom no-repeat;
+    background-size: cover;
+}
+
+#prestige header .wrapper {
+    background: url("../img/catalogue/prestige/after.png") left bottom no-repeat;
+    background-size: contain;
+}
+
+.pr2-solomon {
+    background: url("../img/catalogue/prestige/pr2-solomon.png") center center no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+#elite {
+    
+}
+
+#elite header {
+    background: #7F8A90;
+} #elite header:before {
+    background: url("../img/catalogue/elite/header.jpg") right bottom no-repeat;
+    background-size: cover;
+}
+
+#elite header .wrapper {
+    background: url("../img/catalogue/elite/after.png") left bottom no-repeat;
+    background-size: contain;
+}
+
+.e1-consul {
+    background: url("../img/catalogue/elite/e1-consul.png") center center no-repeat;
+    background-size: cover;
+}
+
+.bulletproof-akm {
+    background: url("../img/catalogue/elite/bulletproof-akm.png") center center no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+#fire {
+    
+}
+
+#fire header {
+    background: #FF6C10;
+} #fire header:before {
+    background: url("../img/catalogue/fire/header.jpg") right bottom no-repeat;
+    background-size: cover;
+}
+
+#fire header .wrapper {
+    background: url("../img/catalogue/fire/after.png") left bottom no-repeat;
+    background-size: contain;
+}
+
+.dp1 {
+    background: url("../img/catalogue/fire/dp1.png") center center no-repeat;
+    background-size: cover;
+}
+
+.dps1 {
+    background: url("../img/catalogue/fire/dps1.png") center center no-repeat;
+    background-size: cover;
+}
+
+.dp2 {
+    background: url("../img/catalogue/fire/dp2.png") center center no-repeat;
+    background-size: cover;
+}
+
+.dps2{
+    background: url("../img/catalogue/fire/dps2.png") center center no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+.offer {
+    padding: 0;
+    background: url("../img/background/offer.jpg") center bottom no-repeat;
+    background-size: cover;
+    font-family: "Fedra Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.offer img {
+    position: absolute;
+    bottom: 0;
+}
+
+.offer .margin {
+    margin: 32px 8px;
+}
+
+
+
+
+
+#offer-free {
+    
+}
+
+#offer-free h2 {
+    font-size: 32px;
+}
+
+#offer-free img {
+    left: -128px;
+    width: 580px;
+}
+
+
+
+
+
+#offer-1day {
+    
+}
+
+#offer-1day img {
+    left: -160px;
+    width: 480px;
+}
+
+
+
+
+
+#consultation {
+    
+}
+
+.consultant {
+    position: absolute;
+    bottom: 0;
+    left: calc(100% - 24px);
+}
+
+
+
+
+
+#pros {
+    background: url("../img/background/pros.jpg") center bottom no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+#plan {
+    
+}
+
+.timeline {
+    width: 1px;
+    height: 64px;
+    margin: 0 auto;
+    background: #E6E6E6;
+}
+
+.step {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #E6E6E6;
+}
+
+.step.main {
+    width: 16px;
+    height: 16px;
+    background: white;
+    border: 3px solid #00549B;
+}
+
+.step div {
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 14px;
+    text-align: right;
+} .step:nth-child(4n) div {
+    left: 32px;
+    right: auto;
+    text-align: left;
+}
+
+.step.main div {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#plan button {
+    margin-top: 8px;
+}
+
+
+
+
+
+#comments {
+    padding-top: 16px;
+}
+
+.avatar {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 100px;
+    height: 100px;
+    margin: 16px 0;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 0 0 1px #E6E6E6;
+}
+
+.avatar-01 {
+    background: url("../img/avatar/01.jpg") center center no-repeat;
+}
+
+.avatar-02 {
+    background: url("../img/avatar/02.jpg") center center no-repeat;
+}
+
+.avatar-03 {
+    background: url("../img/avatar/03.jpg") center center no-repeat;
+}
+
+.comment {
+    position: relative;
+    padding: 48px;
+    border-radius: 24px;
+    border: 1px solid #E6E6E6;
+} .comment:before {
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-left: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    -webkit-transform: rotate(45deg);
+}
+
+.preview {
+    width: 25px;
+    height: 52px;
+    margin-right: 8px;
+}
+
+
+
+
+
+#offer-business {
+    background: url("../img/background/business.jpg") center center no-repeat;
+    background-size: cover;
+    font-size: 24px;
+}
+
+
+
+
+
+#final {
+    background: url("../img/background/final.jpg") center bottom no-repeat;
+    background-size: cover;
+}

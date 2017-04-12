@@ -1,0 +1,11 @@
+.iexplore {
+    display: none;
+}
+
+.lt-ie9 .iexplore {
+    display: inherit;
+}
+
+.lt-ie9 .svg {
+    display: none;
+}

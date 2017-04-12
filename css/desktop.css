@@ -1,0 +1,378 @@
+@media only screen and (min-width: 768px) {
+    
+    .door-placeholder {
+        position: absolute;
+        z-index: 1;
+        width: 216px;
+        height: 444px;
+        box-shadow: 0 2px 8px rgba(0,0,0, 0.75);
+    }
+    
+    .door-background {
+        width: 216px;
+        height: 444px;
+        background: url("../img/main/background.jpg") center bottom no-repeat;
+        background-size: cover;
+    } .door-background:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 21px;
+        right: 21px;
+        height: 32px;
+        background: white;
+    }
+    
+    .door-frame {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 216px;
+        height: 444px;
+        background: url("../img/main/frame.png") center center no-repeat;
+        background-size: cover;
+    }
+    
+    #main .door,
+    #final .door {
+        position: absolute;
+        left: 21px;
+        bottom: 2px;
+        width: 174px;
+        height: 420px;
+        background: url("../img/main/door-closed.jpg") center top no-repeat;
+        background-size: cover;
+        transform-origin: right center;
+        transform-style: preserve-3d;
+        -webkit-transform: perspective(900px);
+        -moz-transform: perspective(900px);
+        -ms-transform: perspective(900px);
+        -o-transform: perspective(900px);
+        transform: perspective(900px);
+        -webkit-transition: all 0.1s ease-in;
+        -moz-transition: all 0.1s ease-in;
+        -ms-transition: all 0.1s ease-in;
+        -o-transition: all 0.1s ease-in;
+        transition: all 0.1s ease-in;
+    }
+    
+    @keyframes open {
+        0% {
+            -webkit-transform: perspective(900px) rotate3d(0,1,0, 0deg);
+            -moz-transform: perspective(900px) rotate3d(0,1,0, 0deg);
+            -ms-transform: perspective(900px) rotate3d(0,1,0, 0deg);
+            -o-transform: perspective(900px) rotate3d(0,1,0, 0deg);
+            transform: perspective(900px) rotate3d(0,1,0, 0deg);
+        }/*
+        50% {
+            -webkit-transform: perspective(900px) rotate3d(0,1,0, -50deg);
+            -moz-transform: perspective(900px) rotate3d(0,1,0, -50deg);
+            -ms-transform: perspective(900px) rotate3d(0,1,0, -50deg);
+            -o-transform: perspective(900px) rotate3d(0,1,0, -50deg);
+            transform: perspective(900px) rotate3d(0,1,0, -50deg);
+        }
+        75% {
+            -webkit-transform: perspective(900px) rotate3d(0,1,0, -40deg);
+            -moz-transform: perspective(900px) rotate3d(0,1,0, -40deg);
+            -ms-transform: perspective(900px) rotate3d(0,1,0, -40deg);
+            -o-transform: perspective(900px) rotate3d(0,1,0, -40deg);
+            transform: perspective(900px) rotate3d(0,1,0, -40deg);
+        }*/
+        100% {
+            -webkit-transform: perspective(900px) rotate3d(0,1,0, -43deg);
+            -moz-transform: perspective(900px) rotate3d(0,1,0, -43deg);
+            -ms-transform: perspective(900px) rotate3d(0,1,0, -43deg);
+            -o-transform: perspective(900px) rotate3d(0,1,0, -43deg);
+            transform: perspective(900px) rotate3d(0,1,0, -43deg);
+        }
+    }
+    
+    #main .animate .door,
+    #final .animate .door {
+        -webkit-animation: open 2s ease-in-out 1s;
+        -moz-animation: open 2s ease-in-out 1s;
+        -ms-animation: open 2s ease-in-out 1s;
+        -o-animation: open 2s ease-in-out 1s;
+        animation: open 2s ease-in-out 1s;
+        animation-fill-mode: forwards;
+        -webkit-transition: all 1.5s ease-in-out 1s;
+        -moz-transition: all 1.5s ease-in-out 1s;
+        -ms-transition: all 1.5s ease-in-out 1s;
+        -o-transition: all 1.5s ease-in-out 1s;
+        transition: all 1.5s ease-in-out 1s;
+    }
+    
+    .door-background {
+        -webkit-transition: all 1.5s ease-in-out 1s;
+        -moz-transition: all 1.5s ease-in-out 1s;
+        -ms-transition: all 1.5s ease-in-out 1s;
+        -o-transition: all 1.5s ease-in-out 1s;
+        transition: all 1.5s ease-in-out 1s;
+        -webkit-filter: brightness(1000%);
+        -moz-filter: brightness(1000%);
+        -ms-filter: brightness(1000%);
+        -o-filter: brightness(1000%);
+        filter: brightness(1000%);
+    } .animate .door-background {
+        -webkit-filter: brightness(100%);
+        -moz-filter: brightness(100%);
+        -ms-filter: brightness(100%);
+        -o-filter: brightness(100%);
+        filter: brightness(100%);
+    }
+    
+    #badges img,
+    #plan button,
+    .avatar {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+    
+    #badges .animate img,
+    #plan .animate button,
+    .animate .avatar {
+        -webkit-animation: bubble 0.5s ease-out;
+        -moz-animation: bubble 0.5s ease-out;
+        -ms-animation: bubble 0.5s ease-out;
+        -o-animation: bubble 0.5s ease-out;
+        animation: bubble 0.5s ease-out;
+        animation-fill-mode: forwards;
+    }
+    
+    #badges img ~ p,
+    .item button {
+        opacity: 0;
+    }
+    
+    #badges .animate img ~ p,
+    .item:hover button {
+        -webkit-animation: appear 0.5s ease-in 1s;
+        -moz-animation: appear 0.5s ease-in 1s;
+        -ms-animation: appear 0.5s ease-in 1s;
+        -o-animation: appear 0.5s ease-in 1s;
+        animation: appear 0.5s ease-in 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    #badges .animate img ~ h3 {
+        -webkit-animation: appear 0.5s ease-in;
+        -moz-animation: appear 0.5s ease-in;
+        -ms-animation: appear 0.5s ease-in;
+        -o-animation: appear 0.5s ease-in;
+        animation: appear 0.5s ease-in;
+        animation-fill-mode: forwards;
+    }
+    
+    .item .row:nth-of-type(2) > .column:first-of-type {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .item:hover .row:nth-of-type(2) > .column:first-of-type {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    
+    .item {
+        
+    }
+    
+    .item .door {
+        transform-style: preserve-3d;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        -webkit-transform: perspective(900px);
+        -moz-transform: perspective(900px);
+        -ms-transform: perspective(900px);
+        -o-transform: perspective(900px);
+        transform: perspective(900px);
+    } .item .door:before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 16px;
+        background: black;
+        transform-origin: center top;
+        -webkit-filter: blur(16px);
+        -moz-filter: blur(16px);
+        -ms-filter: blur(16px);
+        -o-filter: blur(16px);
+        filter: blur(16px);
+        -webkit-transform: perspective(900px) rotate3d(1,0,0, 90deg);
+        -moz-transform: perspective(900px) rotate3d(1,0,0, 90deg);
+        -ms-transform: perspective(900px) rotate3d(1,0,0, 90deg);
+        -o-transform: perspective(900px) rotate3d(1,0,0, 90deg);
+        transform: perspective(900px) rotate3d(1,0,0, 90deg);
+    } .item:hover .door {
+        -webkit-transform: perspective(900px) rotate3d(0,1,0, 145deg);
+        -moz-transform: perspective(900px) rotate3d(0,1,0, 145deg);
+        -ms-transform: perspective(900px) rotate3d(0,1,0, 145deg);
+        -o-transform: perspective(900px) rotate3d(0,1,0, 145deg);
+        transform: perspective(900px) rotate3d(0,1,0, 145deg);
+    } .item:hover .door.wide {
+        -webkit-transform: perspective(900px) rotate3d(0,1,0, 125deg);
+        -moz-transform: perspective(900px) rotate3d(0,1,0, 125deg);
+        -ms-transform: perspective(900px) rotate3d(0,1,0, 125deg);
+        -o-transform: perspective(900px) rotate3d(0,1,0, 125deg);
+        transform: perspective(900px) rotate3d(0,1,0, 125deg);
+    } #fire .item:hover .door {
+        -webkit-transform: perspective(900px) rotate3d(0,1,0, 55deg);
+        -moz-transform: perspective(900px) rotate3d(0,1,0, 55deg);
+        -ms-transform: perspective(900px) rotate3d(0,1,0, 55deg);
+        -o-transform: perspective(900px) rotate3d(0,1,0, 55deg);
+        transform: perspective(900px) rotate3d(0,1,0, 55deg);
+    }
+
+    .item .door .side {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 10px;
+        background: black;
+        transform-origin: left center;
+        -webkit-transform: translateX(1px) rotate3d(0,1,0, 90deg);
+        -moz-transform: translateX(1px) rotate3d(0,1,0, 90deg);
+        -ms-transform: translateX(1px) rotate3d(0,1,0, 90deg);
+        -o-transform: translateX(1px) rotate3d(0,1,0, 90deg);
+        transform: translateX(1px) rotate3d(0,1,0, 90deg);
+    }
+
+    .item .door .inside {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        backface-visibility: hidden;
+        -webkit-transform: translate3d(0,0,-10px) rotate3d(0,1,0, 180deg);
+        -moz-transform: translate3d(0,0,-10px) rotate3d(0,1,0, 180deg);
+        -ms-transform: translate3d(0,0,-10px) rotate3d(0,1,0, 180deg);
+        -o-transform: translate3d(0,0,-10px) rotate3d(0,1,0, 180deg);
+        transform: translate3d(0,0,-10px) rotate3d(0,1,0, 180deg);
+    }
+
+    #b2-profi .inside {
+        background: url("../img/catalogue/budget/b2-profi-inside.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    #b3-master .inside {
+        background: url("../img/catalogue/budget/b3-master-inside.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    #b3-master-2 .inside {
+        background: url("../img/catalogue/budget/b3-master-2-inside.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    #b4-practic-metal .inside {
+        background: url("../img/catalogue/budget/b4-practic-metal-inside.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    #s2-quartet .inside {
+        background: url("../img/catalogue/standart/s2-quartet-inside.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    #s4-techno .inside {
+        background: url("../img/catalogue/standart/s4-techno-inside.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    #s4-diplomat .inside {
+        background: url("../img/catalogue/standart/s4-diplomat-inside.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    #s4-senator .inside {
+        background: url("../img/catalogue/standart/s4-senator-inside.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    #s4-senator-s .inside {
+        background: url("../img/catalogue/standart/s4-senator-s-inside.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    #optima .inside {
+        background: url("../img/catalogue/standart/optima-inside.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    #optima-70 .inside {
+        background: url("../img/catalogue/standart/optima-inside.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    #modern .inside {
+        background: url("../img/catalogue/standart/modern-inside.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    #pr2-solomon .inside {
+        background: url("../img/catalogue/prestige/pr2-solomon-inside.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    #e1-consul .inside {
+        background: url("../img/catalogue/elite/e1-consul-inside.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    #bulletproof-akm .inside {
+        background: url("../img/catalogue/elite/bulletproof-akm-inside.png") center center no-repeat;
+        background-size: cover;
+    }
+    
+    .item .row:nth-of-type(2) > .column:last-of-type {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: transform 0.5s ease-in-out, opacity 0.25s ease-in;
+        -moz-transition: transform 0.5s ease-in-out, opacity 0.25s ease-in;
+        -ms-transition: transform 0.5s ease-in-out, opacity 0.25s ease-in;
+        -o-transition: transform 0.5s ease-in-out, opacity 0.25s ease-in;
+        transition: transform 0.5s ease-in-out, opacity 0.25s ease-in;
+    }
+    
+    .item:hover .row:nth-of-type(2) > .column:last-of-type {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: transform 0.5s ease-in-out, opacity 0.25s ease-in 0.25s;
+        -moz-transition: transform 0.5s ease-in-out, opacity 0.25s ease-in 0.25s;
+        -ms-transition: transform 0.5s ease-in-out, opacity 0.25s ease-in 0.25s;
+        -o-transition: transform 0.5s ease-in-out, opacity 0.25s ease-in 0.25s;
+        transition: transform 0.5s ease-in-out, opacity 0.25s ease-in 0.25s;
+    }
+    
+}
